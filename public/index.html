@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="تجربة ميديا بلاير مستقبلية مستوحاة من Apple Music بلمسات عربية وواجهات زجاجية أنيقة."
+    />
+    <title>Media Player Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar glass-panel tilt">
+        <div class="logo">MuseFlow</div>
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="#" class="nav-item active">
+            <span class="icon"></span>
+            <span>الرئيسية</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">★</span>
+            <span>المفضلة</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">♫</span>
+            <span>البودكاست</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">⬤</span>
+            <span>الراديو</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="primary-btn">ترقية الحساب</button>
+          <p class="tagline">استمتع بصوت Hi-Fi وتجربة بلا حدود</p>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="search">
+            <input type="search" placeholder="ابحث عن أغنية أو فنان" />
+            <span class="search-icon">⌕</span>
+          </div>
+          <div class="actions">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <button class="icon-btn" aria-label="Now Playing">▶</button>
+            <div class="profile">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80" alt="Profile" />
+              <span>مريم علي</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero glass-panel tilt" aria-labelledby="hero-title" data-hero>
+          <div class="hero-content">
+            <p class="badge" data-hero-badge></p>
+            <h1 id="hero-title">
+              <span data-hero-title></span>
+              <span data-hero-highlight class="hero-highlight"></span>
+            </h1>
+            <p data-hero-description></p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-hero-primary></button>
+              <button class="secondary-btn" data-hero-secondary></button>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="vinyl" data-hero-vinyl></div>
+            <img data-hero-image alt="غلاف الألبوم" />
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h2>الاستكشاف السريع</h2>
+            <button class="ghost-btn" data-explore-view-all>عرض الكل</button>
+          </div>
+          <div class="explore-grid" data-explore-grid></div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h2>يتصدر الآن</h2>
+            <div class="carousel-controls" aria-hidden="true">
+              <button class="icon-btn" disabled>‹</button>
+              <button class="icon-btn" disabled>›</button>
+            </div>
+          </div>
+          <div class="carousel" data-trending-carousel></div>
+        </section>
+
+        <section class="section two-column">
+          <div class="glass-panel playlist tilt">
+            <div class="section-header">
+              <h2>قوائم مصممة لك</h2>
+              <button class="ghost-btn" data-playlists-view-all>عرض الكل</button>
+            </div>
+            <ul class="list" data-playlist-list></ul>
+          </div>
+
+          <div class="glass-panel chart tilt">
+            <div class="section-header">
+              <h2>المراتب الأولى</h2>
+              <button class="ghost-btn" data-chart-view-all>عرض الكل</button>
+            </div>
+            <ol class="chart-list" data-chart-list></ol>
+          </div>
+        </section>
+      </main>
+
+      <div class="now-playing glass-panel" data-now-playing>
+        <img data-now-cover alt="الغلاف الحالي" />
+        <div class="track-info">
+          <h3 data-now-title></h3>
+          <p data-now-subtitle></p>
+        </div>
+        <div class="controls">
+          <button class="icon-btn" data-prev aria-label="المسار السابق">⏮</button>
+          <button class="icon-btn play" data-toggle aria-label="تشغيل/إيقاف">⏯</button>
+          <button class="icon-btn" data-next aria-label="المسار التالي">⏭</button>
+        </div>
+        <div class="progress">
+          <span data-now-elapsed>0:00</span>
+          <div class="progress-bar">
+            <div class="progress-fill" data-now-progress style="width: 0%"></div>
+          </div>
+          <span data-now-total>0:00</span>
+        </div>
+        <div class="volume">
+          <span>🔊</span>
+          <input type="range" min="0" max="100" value="75" data-volume />
+        </div>
+        <audio data-audio-player preload="none"></audio>
+      </div>
+    </div>
+
+    <div class="status-banner" role="status" hidden data-status-banner></div>
+    <div class="backdrop"></div>
+    <script src="script.js" type="module" defer></script>
+  </body>
+</html>

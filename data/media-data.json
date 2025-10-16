@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "badge": "الحدث الأكبر",
+    "title": "إصدار حصري لألبوم",
+    "highlight": "الطيف النيوني",
+    "description": "جرعات عالية من الإلكترو بوب مع إنتاج ثلاثي الأبعاد ومستويات صوتية Hi-Res. استمع الآن واستكشف عالم الصوت الغامر.",
+    "primaryAction": {
+      "label": "تشغيل الآن",
+      "url": "/albums/neon-spectrum/play"
+    },
+    "secondaryAction": {
+      "label": "إضافة للمكتبة",
+      "url": "/library/add/neon-spectrum"
+    },
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500",
+    "vinyl": true
+  },
+  "explore": [
+    {
+      "title": "قوائم مختارة بعناية",
+      "description": "مزيج متجدد يومياً بقصص صوتية تضبط مزاجك.",
+      "label": "ابدأ التصفح",
+      "slug": "editorial/spotlight",
+      "color": "gradient-purple"
+    },
+    {
+      "title": "جلسات Live",
+      "description": "حفلات حصرية مباشرة بجودة Dolby Atmos.",
+      "label": "استمع الآن",
+      "slug": "live/sessions",
+      "color": "gradient-blue"
+    },
+    {
+      "title": "البودكاست المميز",
+      "description": "حوارات عميقة مع رواد الفن والابتكار.",
+      "label": "اكتشف الحلقات",
+      "slug": "podcasts/featured",
+      "color": "gradient-red"
+    }
+  ],
+  "trending": [
+    {
+      "title": "Pulse Theory",
+      "artist": "Nova Sinclair",
+      "cover": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400",
+      "previewUrl": "https://cdn.pixabay.com/download/audio/2024/02/19/audio_b7c7c8bdc9.mp3?filename=future-glitch-198228.mp3",
+      "duration": 226
+    },
+    {
+      "title": "Golden Hour",
+      "artist": "Luna Waves",
+      "cover": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400",
+      "previewUrl": "https://cdn.pixabay.com/download/audio/2022/03/29/audio_55519fb9da.mp3?filename=sunset-dreams-141422.mp3",
+      "duration": 242
+    },
+    {
+      "title": "Desert Bloom",
+      "artist": "Mirage Collective",
+      "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400",
+      "previewUrl": "https://cdn.pixabay.com/download/audio/2022/03/15/audio_7874f2adb0.mp3?filename=night-desert-138888.mp3",
+      "duration": 254
+    },
+    {
+      "title": "Analog Dreams",
+      "artist": "Echo Labs",
+      "cover": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400",
+      "previewUrl": "https://cdn.pixabay.com/download/audio/2023/05/09/audio_739fc466f0.mp3?filename=late-night-vibes-145546.mp3",
+      "duration": 211
+    }
+  ],
+  "playlists": [
+    {
+      "title": "صباح هادئ",
+      "description": "إيقاعات هادئة لبدء يومك بقوة",
+      "badge": "+5"
+    },
+    {
+      "title": "تكنو نايت",
+      "description": "نبضات عالية للطاقة حتى الفجر",
+      "badge": "NEW"
+    },
+    {
+      "title": "جلسة مزاج",
+      "description": "اختيارات فريق التحرير لأفضل الأصوات",
+      "badge": "LIVE"
+    }
+  ],
+  "charts": [
+    {
+      "title": "Midnight Echoes",
+      "artist": "Gravity 46"
+    },
+    {
+      "title": "Stardust Lullaby",
+      "artist": "Atlas Bloom"
+    },
+    {
+      "title": "Velvet Horizon",
+      "artist": "Oceana"
+    },
+    {
+      "title": "Infrared",
+      "artist": "Pulse District"
+    },
+    {
+      "title": "Skyline Drift",
+      "artist": "Metroline"
+    }
+  ],
+  "nowPlaying": {
+    "title": "Mirage Lights",
+    "artist": "Lunar Phase",
+    "category": "سينث بوب",
+    "cover": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?w=200",
+    "previewUrl": "https://cdn.pixabay.com/download/audio/2021/09/02/audio_b8f9f41cce.mp3?filename=mirage-110039.mp3",
+    "progress": {
+      "elapsed": 81,
+      "total": 222
+    }
+  }
+}

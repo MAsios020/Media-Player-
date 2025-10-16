@@ -329,6 +329,10 @@ body::after {
 }
 
 .hero h1 span {
+  display: inline-block;
+}
+
+.hero-highlight {
   color: var(--accent);
 }
 
@@ -481,6 +485,10 @@ body::after {
   transition: background 0.3s ease;
 }
 
+.chart-list li {
+  grid-template-columns: auto 1fr;
+}
+
 .list li:hover,
 .chart-list li:hover {
   background: rgba(255, 255, 255, 0.06);
@@ -495,6 +503,12 @@ body::after {
   font-size: 0.7rem;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.12);
+}
+
+.chart-list .rank {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent);
 }
 
 .chart-list li h3 {
@@ -568,6 +582,46 @@ body::after {
 .volume input[type="range"] {
   width: 110px;
   accent-color: var(--accent);
+}
+
+.status-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  background: rgba(16, 18, 27, 0.85);
+  color: var(--text);
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+  font-size: 0.95rem;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.status-banner[data-variant='error'] {
+  background: rgba(255, 77, 103, 0.95);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.status-banner[data-variant='warning'] {
+  background: rgba(255, 188, 66, 0.95);
+  color: #1a1027;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.status-banner[data-variant='success'] {
+  background: rgba(60, 213, 158, 0.9);
+  color: #05121f;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.status-banner[hidden] {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .badge,
