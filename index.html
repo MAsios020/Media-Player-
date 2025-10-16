@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="تجربة ميديا بلاير مستقبلية مستوحاة من Apple Music بلمسات عربية وواجهات زجاجية أنيقة."
+    />
+    <title>Media Player Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar glass-panel tilt">
+        <div class="logo">MuseFlow</div>
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="#" class="nav-item active">
+            <span class="icon"></span>
+            <span>الرئيسية</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">★</span>
+            <span>المفضلة</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">♫</span>
+            <span>البودكاست</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="icon">⬤</span>
+            <span>الراديو</span>
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="primary-btn">ترقية الحساب</button>
+          <p class="tagline">استمتع بصوت Hi-Fi وتجربة بلا حدود</p>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="search">
+            <input type="search" placeholder="ابحث عن أغنية أو فنان" />
+            <span class="search-icon">⌕</span>
+          </div>
+          <div class="actions">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <button class="icon-btn" aria-label="Now Playing">▶</button>
+            <div class="profile">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80" alt="Profile" />
+              <span>مريم علي</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero glass-panel tilt" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <p class="badge">الحدث الأكبر</p>
+            <h1 id="hero-title">إصدار حصري لألبوم <span>الطيف النيوني</span></h1>
+            <p>
+              جرعات عالية من الإلكترو بوب مع إنتاج ثلاثي الأبعاد ومستويات صوتية Hi-Res.
+              استمع الآن واستكشف عالم الصوت الغامر.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn">تشغيل الآن</button>
+              <button class="secondary-btn">إضافة للمكتبة</button>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="vinyl"></div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Album Artwork" />
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h2>الاستكشاف السريع</h2>
+            <button class="ghost-btn">عرض الكل</button>
+          </div>
+          <div class="explore-grid">
+            <article class="card gradient-purple">
+              <h3>قوائم مختارة بعناية</h3>
+              <p>مزيج متجدد يومياً بقصص صوتية تضبط مزاجك.</p>
+              <button class="chip">ابدأ التصفح</button>
+            </article>
+            <article class="card gradient-blue">
+              <h3>جلسات Live</h3>
+              <p>حفلات حصرية مباشرة بجودة Dolby Atmos.</p>
+              <button class="chip">استمع الآن</button>
+            </article>
+            <article class="card gradient-red">
+              <h3>البودكاست المميز</h3>
+              <p>حوارات عميقة مع رواد الفن والابتكار.</p>
+              <button class="chip">اكتشف الحلقات</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-header">
+            <h2>يتصدر الآن</h2>
+            <div class="carousel-controls">
+              <button class="icon-btn">‹</button>
+              <button class="icon-btn">›</button>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="album-card glass-panel tilt">
+              <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400" alt="Album cover" />
+              <div class="album-info">
+                <h3>Pulse Theory</h3>
+                <p>Nova Sinclair</p>
+              </div>
+              <button class="icon-btn play">▶</button>
+            </div>
+            <div class="album-card glass-panel tilt">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400" alt="Album cover" />
+              <div class="album-info">
+                <h3>Golden Hour</h3>
+                <p>Luna Waves</p>
+              </div>
+              <button class="icon-btn play">▶</button>
+            </div>
+            <div class="album-card glass-panel tilt">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400" alt="Album cover" />
+              <div class="album-info">
+                <h3>Desert Bloom</h3>
+                <p>Mirage Collective</p>
+              </div>
+              <button class="icon-btn play">▶</button>
+            </div>
+            <div class="album-card glass-panel tilt">
+              <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400" alt="Album cover" />
+              <div class="album-info">
+                <h3>Analog Dreams</h3>
+                <p>Echo Labs</p>
+              </div>
+              <button class="icon-btn play">▶</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section two-column">
+          <div class="glass-panel playlist tilt">
+            <div class="section-header">
+              <h2>قوائم مصممة لك</h2>
+              <button class="ghost-btn">عرض الكل</button>
+            </div>
+            <ul class="list">
+              <li>
+                <span class="badge">+5</span>
+                <div>
+                  <h3>صباح هادئ</h3>
+                  <p>إيقاعات هادئة لبدء يومك بقوة</p>
+                </div>
+                <button class="icon-btn">▶</button>
+              </li>
+              <li>
+                <span class="badge">NEW</span>
+                <div>
+                  <h3>تكنو نايت</h3>
+                  <p>نبضات عالية للطاقة حتى الفجر</p>
+                </div>
+                <button class="icon-btn">▶</button>
+              </li>
+              <li>
+                <span class="badge">LIVE</span>
+                <div>
+                  <h3>جلسة مزاج</h3>
+                  <p>اختيارات فريق التحرير لأفضل الأصوات</p>
+                </div>
+                <button class="icon-btn">▶</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-panel chart tilt">
+            <div class="section-header">
+              <h2>المراتب الأولى</h2>
+              <button class="ghost-btn">عرض الكل</button>
+            </div>
+            <ol class="chart-list">
+              <li>
+                <h3>Midnight Echoes</h3>
+                <p>Gravity 46</p>
+              </li>
+              <li>
+                <h3>Stardust Lullaby</h3>
+                <p>Atlas Bloom</p>
+              </li>
+              <li>
+                <h3>Velvet Horizon</h3>
+                <p>Oceana</p>
+              </li>
+              <li>
+                <h3>Infrared</h3>
+                <p>Pulse District</p>
+              </li>
+              <li>
+                <h3>Skyline Drift</h3>
+                <p>Metroline</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </main>
+
+      <div class="now-playing glass-panel">
+        <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?w=200" alt="Now Playing" />
+        <div class="track-info">
+          <h3>Mirage Lights</h3>
+          <p>Lunar Phase · سينث بوب</p>
+        </div>
+        <div class="controls">
+          <button class="icon-btn">⏮</button>
+          <button class="icon-btn play">⏯</button>
+          <button class="icon-btn">⏭</button>
+        </div>
+        <div class="progress">
+          <span>1:21</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 64%"></div>
+          </div>
+          <span>3:42</span>
+        </div>
+        <div class="volume">
+          <span>🔊</span>
+          <input type="range" min="0" max="100" value="75" />
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop"></div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
